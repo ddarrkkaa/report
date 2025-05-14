@@ -33,6 +33,7 @@
       main {
         flex: 1;
         padding: 20px;
+        overflow-y: auto;
       }
 
       .content {
@@ -41,6 +42,28 @@
         margin-top: 20px;
         height: 60vh;
         overflow-y: auto;
+      }
+
+      .photo-panel {
+        width: 260px;
+        background: #f5f5f5;
+        padding: 10px;
+        border-left: 2px solid #ccc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .photo-panel h2 {
+        margin: 0 0 10px;
+        font-size: 1.2em;
+      }
+
+      .photo-panel img {
+        width: 100%;
+        border: 2px solid #000;
+        border-radius: 8px;
       }
     </style>
   </head>
@@ -68,6 +91,11 @@
         Натисніть кнопку зліва, щоб переглянути розділ
       </div>
     </main>
+
+    <div class="photo-panel">
+      <h2>Фото студента</h2>
+      <img src="me.jpg" alt="Фото студента" />
+    </div>
 
     <script>
       const content = document.getElementById("content");
